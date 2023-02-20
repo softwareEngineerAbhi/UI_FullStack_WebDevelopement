@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body style="background-color: darkseagreen;">
+    
+
+<h2>UI Full Stack with Web Developement</h2>
+<h4 style=color:red>Duration : 3 Months Including mini Project</h4>
+
+<p>Below are the contents of the Internship Programme</p>
+
+<p style="text-align: right; color:red;">Please Click (+) for Details of the Topics</p>
+
+<button class="accordion">HTML</button>
+<div class="panel">
+  <ul>
+    <li>Learn the anatomy of HTML syntax to structure your
+    websites.</li>
+    <li>Understand the HTML boilerplate and HTML doctypes.</li>
+    <li>How to structure text in HTML.</li>
+    <li>How to structure HTML lists to create unordered and ordered
+    lists.</li>
+    <li>How to insert images using HTML</li>
+    <li>How to create hyperlinks using anchor tags.</li>
+    <li>Understand how to use HTML tables for content.
+    How to use tables for layout.</li>
+    <li>Understand about HTML forms and create a simple contact
+    me form.</li>
+    <li>HTML Divs and how to separate content for CSS styling.</li>
+  </ul>
+</div>
+
+<button class="accordion">CSS</button>
+<div class="panel">
+  <ul>
+    <li>Understand what are cascading style sheets and how you can
+use it to style your website.</li>
+<li>How to use CSS selectors and properties.</li>
+<li>Learn about how to use inline, internal and external CSS.</li>
+<li>CSS specificity and implementing style hierarchy.</li>
+    <li>Class vs. Ids and how to target each.</li>
+        <li>CSS display and how to implement layout.</li>
+            <li>How to use CSS static, relative and absolute positioning
+systems.</li>
+<li>Font styling using CSS and web safe fonts.</li>
+<li>Centering elements using CSS.</li>
+<li>How to use CSS float and clear.</li>
+<li>How combine CSS selectors and understand selector priority.</li>
+  </ul>
+</div>
+
+<button class="accordion">Java Script</button>
+<div class="panel">
+    <ul>
+        <li>The Fundamentals of Code
+Starting code with alerts and prompts.</li>
+<li>Understand Variables and Data Types in JavaScript</li>
+<li>Variable naming in JS</li>
+<li>Working with strings and numbers</li>
+<li>Randomisation and logical operators</li>
+<li>Loops, collections and Conditionals.</li>
+<li>Functions and invocation patterns</li>
+<li>Intermediate JavaScript</li>
+<li>Learn to use JS Expressions, Operators, Statements and
+Declarations</li>
+<li>Object-Oriented Programming</li>
+<li>`This`, Scope and Closures</li>
+    </ul>
+ 
+</div>
+
+<button class="accordion">BootStrap</button>
+<div class="panel">
+    <ul>
+        <li>Learn the fundamentals of implementing responsive web
+    design.</li>
+    <li>How to use Balsamiq to mockup and wireframe websites.</li>
+        <li>The fundamentals of UI design for websites.</li>
+            <li>How to install the Bootstrap framework.</li>
+                <li>Understanding the Bootstrap grid layout system.</li>
+                    <li>How to use bootstrap containers to layout your website
+    easily.</li>
+    <li>Learn to use other Bootstrap components such as buttons.</li>
+        <li>Adding symbols using Font Awesome.</li>
+            <li>Learn to use Bootstrap carousels.</li>
+                <li>Using Bootstrap navigation bars.</li>
+    
+      </ul></div>
+
+<button class="accordion">DOM Manipulation and Dynamic HTML</button>
+<div class="panel">
+    <ul>
+    <li>Learn the tree structure of HTML based websites.</li>
+    <li>Traverse through the document using object notation.</li>
+    <li>Separation of concerns and coding best practices.</li>
+    <li>Manipulate and change the HTML elements using your</li>
+    <li>Understanding of the DOM</li>
+    </ul>
+</div>
+
+<button class="accordion">JQUERY
+</button>
+<div class="panel">
+    <ul>
+    <li>Introduction to functions in jQuery</li>
+    <li>Manipulating text, styles and attributes with jQuery</li>
+    <li>Create animations and customisations with jQuery</li>
+    <li>Use your jQuery knowledge to make your website interactive</li>
+    <li>Responding to user initiated events with jQuery</li>
+</ul>
+</div>
+
+<button class="accordion">Integration with Node js Server</button>
+<div class="panel">
+    <ul> 
+    <li>Apply concepts like data types, objects, methods, objectoriented programming, and classes in the context of backend development.</li>
+    <li>Server-Side JavaScript</li>
+    <li>Using Node on the command line
+    <li>File System Interaction</li>
+    <li>Modules</li>
+    <li>Connection to Mysql DB Server</li>
+</ul>
+</div>
+
+<button class="accordion">Project</button>
+<div class="panel">
+   <p>Project will Based on the Above topic.The Duration for submitting the project will be 1 Month </p>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<footer>
+    <div>
+        <h3 style="color: brown;">For More Details Send Email on <span style="color:darkred">softwareengineerabhishek10@gmail.com</span><h3>
+    </div>
+</footer>
+
+</body>
+</html>
